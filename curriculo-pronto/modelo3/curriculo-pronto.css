@@ -1,0 +1,175 @@
+@font-face {
+    font-family: stem-bold;
+    src: url(stem-bold.ttf);
+}
+
+@font-face {
+    font-family: stem-extralight;
+    src: url(Stem-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: stem-light;
+    src: url(Stem-Light.ttf);
+}
+
+@font-face {
+    font-family: stem-regular;
+    src: url(Stem-Regular.ttf);
+}
+
+
+
+* {
+    -webkit-print-color-adjust: exact;
+    font-family: stem-regular;
+
+}
+
+body,
+html {
+    height: 1200px;
+    background-color: #909090;
+}
+
+.container-curriculo {
+    display: flex;
+    width: 1200px;
+    height: 1690px;
+    margin: auto;
+    background-color: #fff;
+}
+
+
+.left-box {
+    background-color: #222222;
+    padding: 80px 50px 30px 50px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left-box h2 {
+    color: #a7a7a7;
+    font-size: 23px;
+    letter-spacing: 4px;
+    font-family: stem-light;
+    border-bottom: 2px solid #a7a7a7;
+    padding-bottom: 8px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+.left-box hr{
+    height: 1px;
+    border: none;
+    width: 85%;
+    background-color: #a7a7a7;
+}
+.left-box span {
+    color: #9c9c9c;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.image-container {
+    border-radius: 50%;
+    border: 7px solid #00bef1;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.image-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.contato div {
+    margin: 23px 0px 10px 0px;
+}
+
+.contato div img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+
+
+.pessoal div {
+    margin: 15px 0px 15px 0px;
+}
+.pessoal div img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.objetivo p{
+    color: #9c9c9c;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+
+.right-box {
+    width: 850px;
+    padding: 100px 90px 20px 70px;
+}
+
+.name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: stem-bold;
+    color: black;
+    letter-spacing: 6px;
+}
+
+.formacao-idade{
+    font-family: stem-light;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #888888;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+}
+
+.right-box h2{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 24px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.right-box .text{
+    color: #888888;
+   
+}
+.experiencia{
+    margin-bottom: 30px;
+}
+.experiencia div{
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}

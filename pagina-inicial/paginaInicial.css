@@ -1,0 +1,233 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+/* -----------------------INICIO HEAD  --------------------*/
+.main-top {
+  height: 50vh;
+  width: 100%;
+  background-image: url('imagens/Imagem-top-darker.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15vh 0px 0px 5vw;
+}
+
+
+.top-title {
+  font-size: 8vh;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  /* background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(255,255,255,0) 100%); */
+
+}
+
+/*-------------------------- FIM HEAD------------------------- */
+
+.linha{
+  border: 0;
+  height: 5px;
+  border: none;
+  margin: 0px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.3));
+}
+
+
+/* .botao-pgInicial{
+  background-color: rgb(48, 224, 224);
+  border: 1px solid #282828;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 25px;
+  vertical-align: middle;
+  
+  padding: 10px;
+} */
+
+.botoes {
+  text-align: center;
+  background-color: #191b1f;
+
+  padding: 30px 20px;
+  border: 1px solid black;
+}
+
+.button-icon {
+  width: 100px;
+  height: 100px !important;
+}
+
+.botoes a{
+  position: relative;
+  display: inline-block;
+}
+.botoes img {
+  height: 450px;
+  cursor: pointer;
+}
+
+#create-icon {
+  position: absolute;
+  z-index: 99;
+  top:220px;
+  right: 190px;
+  display: none;
+  
+}
+
+#template-icon {
+  position: absolute;
+  top:240px;
+  right: 200px;
+  display: none;
+  
+
+}
+
+/* --------------------INICIO PARTE DE BAIXO -------------------*/
+.main-bottom {
+  padding-top: 20px;
+  text-align: center;
+  background-image: url('imagens/paper-bg blued.png');
+}
+
+.main-bottom h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+
+.title-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.title-image img {
+  width: 60px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  
+}
+.text {
+  font-size: 25px;
+  text-align: justify;
+  
+  padding-bottom: 25px;
+  margin: auto;
+
+}
+ul {
+  font-size: 25px;
+  padding: 0px 0px 30px 30px;
+  list-style-type: circle;
+  width: 60vw;
+  margin: auto;
+  text-align: justify;
+
+}
+li img{
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.text-image{
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: center;
+  border-bottom: 1px solid #b4b4b4;
+  padding-bottom: 20px;
+}
+.text-image img{
+  width: 200px;
+  margin: 30px 0px 0px 20px;
+  
+  
+}
+
+/* -------------------FIM PARTE DE BAIXO------------- */
+
+/*-------------------- MAPA DO SITE----------------- */
+.site-menu {
+ 
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #090c15;
+}
+
+.site-menu p {
+  color: white;
+  width: 270px;
+  margin: 5px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+.site-menu a {
+  width: 300px !important;
+  color: white;
+  text-decoration: none;
+}
+
+.site-menu p:after{
+  display: block;
+  margin-top: 3px;
+  border-bottom: 3px solid white;
+  transform: scaleX(0); 
+  content: '';
+  transform-origin:  0% 50%;
+  transition-timing-function: cubic-bezier(.21,.32,.54,.96)
+  
+  
+ 
+}
+.site-menu p:hover:after{
+  transform: scaleX(1);
+  
+  transition-duration: 0.5s;
+}
+
+/* .site-map p:hover {
+  transition: 0.4s;
+  transform: scale(1.2);
+} */
+
+#map-home {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+#direitos {
+  text-align: right;
+  color: rgb(235, 235, 235);
+  background-color: #2b2b2b;
+  
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+
+}
+
+/*------------ FIM MAPA SITE ---------------*/

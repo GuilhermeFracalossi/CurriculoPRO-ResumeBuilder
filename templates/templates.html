@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templates.css">
+    <title>Nossos Modelos</title>
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="title">Modelos disponíveis</div>
+
+        <div class="subtitle">Porquê a primeira impressão é a que fica ;)</div>
+    </div>
+
+    <img src="../gerador-curriculo/imagens/modelo1.png" alt="Modelo 1" name='modelo1' class="modelo-img big-image">
+    <img src="../gerador-curriculo/imagens/modelo2.jpg" alt="Modelo 2" name='modelo2' class="modelo-img big-image">
+    <img src="../gerador-curriculo/imagens/modelo3.jpg" alt="Modelo 3" name='modelo3' class="modelo-img big-image">
+    <img src="../gerador-curriculo/imagens/modelo4.jpg" alt="Modelo 4" name='modelo4' class="modelo-img big-image">
+
+
+    <div class="modelos-container">
+        <div class="ampliar">
+            <h3 class="modelos-subtitle">Clique para ampliar</h3><img src="zoom-icon.png" alt="">
+        </div>
+
+        <div class="modelo">
+            <img src="../gerador-curriculo/imagens/modelo1.png" alt="Modelo 1" name='modelo1' class="modelo-img">
+        </div>
+
+        <div class="modelo">
+            <img src="../gerador-curriculo/imagens/modelo2.jpg" alt="Modelo 2" name='modelo2' class="modelo-img">
+        </div>
+
+        <div class="modelo">
+            <img src="../gerador-curriculo/imagens/modelo3.jpg" alt="Modelo 3" name='modelo3' class="modelo-img">
+        </div>
+
+        <div class="modelo">
+            <img src="../gerador-curriculo/imagens/modelo4.jpg" alt="Modelo 4" name='modelo4' class="modelo-img">
+        </div>
+
+    </div>
+
+
+
+    <div class="site-menu">
+        <p><a href="../pagina-inicial/pagina-inicial.html">Home</a></p>
+        <p><a href="../gerador-curriculo/gera-curriculo.html" id="exemplos">Crie seu currículo</a></p>
+        <p><a href="templates.html" id="exemplos">Explore nossos modelos</a></p>
+
+    </div>
+    <p id="direitos">Copyright © 2019 |
+        Todos os direitos reservados</p>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+
+<script>
+    var modeloAberto
+    $('.modelo').click(function () {
+        var modelo = $(this).find('.modelo-img').attr('name')
+
+        $('.big-image').each(function () {
+            if ($(this).attr('name') == modelo) {
+                $(this).show()
+                modeloAberto = this
+                $('body *').not(modeloAberto).css('filter', 'blur(4px)')
+
+            }
+        })
+    })
+
+    window.addEventListener('mouseup', function (event) {
+        if (event.target != modeloAberto) {
+            $('.big-image').hide()
+            $('body *').css('filter', 'blur(0px)')
+        }
+    })
+</script>
+
+</html>

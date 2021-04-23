@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="gera-curriculo.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
+
+  <title>CurrículoPRO</title>
+
+</head>
+
+<body>
+
+  <div class="introducao">
+    <h1>Gere seu currículo</h1>
+
+    <h4>Abaixo, você encontra os espaços para colocar as informações que irão para o currículo</h4>
+    <div>
+      <h2>Depois de preenchido, é só partir pro seu novo emprego ;)</h2><img src="imagens/maleta.png" alt="">
+    </div>
+
+  </div>
+
+
+  <hr id="linha">
+
+  <div class="first-container">
+    <div class="sub-title">
+      <img src="imagens/arrow.png" alt="" class="arrow">
+      <img src="imagens/arrow-down.png" alt="" class="arrow-down">
+      Escolha seu modelo
+    </div>
+
+
+    <div class="modelos-container">
+
+      <div class="modelo">
+        <img src="imagens/modelo1.png" alt="Modelo 1">
+        <label class='container'>
+          <input type='radio' name='modelo' value="modelo1" >
+          <span class='checkmark'  ></span>
+        </label>
+      </div>
+
+      <div class="modelo">
+        <img src="imagens/modelo2.jpg" alt="Modelo 2">
+        <label class='container'>
+          <input type='radio' name='modelo' value="modelo2">
+          <span class='checkmark' ></span>
+        </label>
+      </div>
+
+      <div class="modelo">
+        <img src="imagens/modelo3.jpg" alt="Modelo 3">
+        <label class='container'>
+          <input type='radio' name='modelo' value="modelo3">
+          <span class='checkmark' ></span>
+        </label>
+      </div>
+
+      <div class="modelo">
+        <img src="imagens/modelo4.jpg" alt="Modelo 4">
+        <label class='container'>
+          <input type='radio' name='modelo' value="modelo4" >
+          <span class='checkmark' ></span>
+        </label>
+      </div>
+
+      <!-- <div class="modelo">
+        <img src="imagens/modelo5.jpg" alt="Modelo 5">
+        <label class='container'>
+          <input type='radio' name='modelo' value="modelo5" >
+          <span class='checkmark' ></span>
+        </label>
+      </div> -->
+
+    </div>
+
+  </div>
+  <form action="../curriculo-pronto/modelo1/curriculo-pronto.php" method="post" enctype="multipart/form-data">
+
+    <div class="sub-title">
+      <img src="imagens/arrow.png" alt="" class="arrow">
+      <img src="imagens/arrow-down.png" alt="" class="arrow-down">
+      Dados Pessoais
+    </div>
+
+    <div class="dados-pessoas-container">
+
+      <div class="linha">
+
+        <div class="group-name-input ">
+          <p>Nome</p>
+          <input type="text" class="big-input" name="nome">
+        </div>
+
+        <div class="group-name-input ">
+          <p>Sobrenome</p>
+          <input type="text" class="big-input" name="sobrenome">
+        </div>
+
+      </div>
+
+
+      <div class="linha">
+        <div class="group-name-input ">
+          <p>Nacionalidade</p>
+          <div class="warn">Tamanho máximo atingido</div>
+          <input type="text" class="big-input" name="nacionalidade">
+        </div>
+
+        <div class="group-name-input ">
+          <p>Estado</p>
+          <div class="select-custom" class="medium-input">
+            <select name="estados" id='estados' class="medium-input first-input" style="width: 240px;">
+              <option value=""> </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="group-name-input ">
+          <p>Cidade</p>
+          <div class="select-custom" class="medium-input">
+            <select name="cidade" id="cidades" class="medium-input" style="width: 240px;">
+              <option value="" disabled selected> </option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="linha">
+
+        <div class="group-name-input">
+          <p>Grau de formação</p>
+          <div class="select-custom big-input">
+            <select name="formacao" class="big-input">
+              <option value="" disabled selected></option>
+              <option value="Ensino fundamental incompleto">Ensino fundamental incompleto</option>
+              <option value="Ensino fundamental completo">Ensino fundamental completo</option>
+              <option value="Ensino médio incompleto">Ensino médio incompleto</option>
+              <option value="Ensino médio completo">Ensino médio completo</option>
+              <option value="Ensino médio técnico incompleto">Ensino médio técnico incompleto</option>
+              <option value="Ensino médio técnico completo">Ensino médio técnico completo</option>
+              <option value="Graduação incompleta">Graduação incompleta</option>
+              <option value="Graduação completa">Graduação completa</option>
+              <option value="Pós-Graduação incompleta">Pós-Graduação incompleta</option>
+              <option value="Pós-Graduação completa">Pós-Graduação completa</option>
+              <option value="Mestrado incompleto">Mestrado incompleto</option>
+              <option value="Mestrado completo">Mestrado completo</option>
+              <option value="Doutorado/PhD incompleto">Doutorado/PhD incompleto</option>
+              <option value="Doutorado/PhD completo">Doutorado/PhD completo</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="group-name-input">
+          <p>Estado Civil</p>
+          <div class="select-custom medium-input first-input">
+            <select name="estadoCivil" class="medium-input">
+              <option value="" disabled selected></option>
+              <option value="Solteiro">Solteiro</option>
+              <option value="União Estável">União Estável</option>
+              <option value="Casado">Casado</option>
+              <option value="Separado">Separado</option>
+              <option value="Divorciado">Divorciado</option>
+              <option value="Viúvo">Viúvo</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="group-name-input">
+          <p>Sexo</p>
+          <div class="select-custom">
+            <select name="sexo" class="medium-input">
+              <option value="" disabled selected></option>
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="linha">
+
+
+        <div class="group-name-input">
+          <div class="warn">Tamanho máximo atingido</div>
+          <p>Email</p>
+          <input type="email" class="big-input" name="email">
+        </div>
+
+        <div class="group-name-input">
+          <div class="warn">Tamanho máximo atingido</div>
+          <p>Endereço</p>
+          <input type="text" class="big-input" name="endereco">
+        </div>
+
+
+
+      </div>
+      <div class="linha">
+
+        <div class="group-name-input big-input">
+          <div class="warn">Tamanho máximo atingido</div>
+          <p>Bairro</p>
+          <input type="text" class="big-input" name="bairro">
+        </div>
+
+        <div class="group-name-input medium-input first-input">
+          <p>Número da residência</p>
+          <input type="number" name="resNumero" class="medium-input">
+        </div>
+
+        <div class="group-name-input medium-input">
+          <p>Idade</p>
+          <input type="number" name='idade' class="medium-input" min="14" max="100">
+        </div>
+      </div>
+      <div class="linha">
+        <div class="group-name-input big-input">
+          <p>Celular</p>
+          <div class="warn">Tamanho máximo atingido</div>
+          <div class="warn-qtd">Número limite de telefones</div>
+          <div class="number-warn">Informe números</div>
+          <div class="d-flex">
+            <input type="text" name="celular[]" class='numberPhone big-input'>
+            <button onclick='addInput(event, this)' class="plusButton">+</button>
+          </div>
+        </div>
+
+
+        <div class="group-name-input big-input">
+          <p>Telefone</p>
+          <div class="warn">Tamanho máximo atingido</div>
+          <div class="warn-qtd">Número limite de telefones</div>
+          <div class="number-warn">Informe números</div>
+          <div class="d-flex">
+            <input type="text" name="telefone[]" class="numberPhone big-input last-input1" style="width: 450px;"><button
+              onclick='addInput(event, this)' class="plusButton">+</button>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    <!-- FORMACAO -->
+
+    <div class="sub-title">
+      <img src="imagens/arrow.png" alt="" class="arrow">
+      <img src="imagens/arrow-down.png" alt="" class="arrow-down">
+      Formação Acadêmica
+    </div>
+
+    <div class='formacao-container'>
+      <div class='linha'>
+        <div class='group-name-input'>
+          <p>Curso <span>1</span></p>
+          <div class='warn'>Tamanho máximo atingido</div>
+          <input type='text' id='curso' name='curso[]' class='fullsize-input'>
+        </div>
+      </div>
+      <div class='linha'>
+        <div class='group-name-input'>
+          <p>Instituição</p>
+          <div class='warn'>Tamanho máximo atingido</div>
+          <input type='text' class='big-input instituicao' name='instituicao[]' id='instituicao'>
+        </div>
+
+        <div class='group-name-input'>
+          <p>Ano de conclusão</p>
+          <div class='d-flex'>
+            <label class='container'>Concluído
+              <input type='radio' name='situacaoCurso[0][]' value='Concluído'>
+              <span class='checkmark'></span>
+            </label>
+            <label class='container'>Previsto
+              <input type='radio' name='situacaoCurso[0][]' value='Previsto'>
+              <span class='checkmark'></span>
+            </label>
+
+            <input type='number' min='1900' max='2100' class='last-input2' name='anoConclusao[]'>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <button class="adicionar-botao-form" onclick="addFormacao(event)">Adicionar nova formação</button>
+    <button class='remover-botao-form' onclick='removeFormacao(event)'>Remover formação</button>
+
+
+    <!-- EXPERIENCIA PROFISSIONAL -->
+    <div class='sub-title'>
+      <img src='imagens/arrow.png' alt='' class='arrow'>
+      <img src='imagens/arrow-down.png' alt='' class='arrow-down'>
+      Experiência Profissional
+    </div>
+
+    <div class='experiencia-container'>
+
+      <div class='linha'>
+        <div class='group-name-input big-input'>
+          <p>Empresa</p>
+          <div class="warn">Tamanho máximo atingido</div>
+          <input type='text' name='empresa[]' class='big-input'>
+        </div>
+
+        <div class='group-name-input big-input'>
+          <p>Cargo</p>
+          <div class="warn">Tamanho máximo atingido</div>
+          <input type='text' name='cargo[]' class='big-input'>
+        </div>
+      </div>
+
+      <div class='linha'>
+        <div class='group-name-input'>
+          <p>Função desempenhada</p>
+          <textarea type='text' name='funcao-trabalho[]'></textarea>
+        </div>
+
+        <div class='group-name-input first-input'>
+          <p>Ano de entrada</p>
+          <input type='number' name='ano-entrada[]'>
+
+        </div>
+
+        <div class='group-name-input'>
+          <p>Ano de saída</p>
+          <input type='number' class='last-input3' name='ano-saida[]'>
+
+        </div>
+      </div>
+    </div>
+
+    <button class='adicionar-botao-form' onclick="addExperiencia(event)">Adicionar nova experiência
+      profissional</button>
+
+
+    <div class="sub-title">
+      <img src="imagens/arrow.png" alt="" class="arrow">
+      <img src="imagens/arrow-down.png" alt="" class="arrow-down">
+      Informações adicionais
+    </div>
+
+
+    <div class="informacoes-adic-container">
+
+      <div class="group-name-input" style="width: 100%;">
+        <div class="d-flex">
+          <p>Objetivo profissional</p>
+          <img src="imagens/help.png" alt="Ajuda">
+        </div>
+        <input type="text" name="objetivo" style="width: 100%;">
+      </div>
+
+      <div class="linha">
+        <div class="group-name-input">
+          <div class="d-flex">
+            <p>Fale um pouco sobre você</p>
+            <img src="imagens/help.png" alt="Ajuda">
+          </div>
+          <textarea name="faleMais"></textarea>
+
+        </div>
+
+        <div class="group-name-input">
+          <p>Sua foto</p>
+          <div class='warn-img'>Envie um arquivo de foto!</div>
+          <div class="text-center">
+            <img src="imagens/profile.svg" id="imagemPerfil" style='width: 170px; margin-bottom: 10px;'
+              alt="Foto de perfil">
+            <input type="file" name="foto" id="fotoInput" >
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button name="enviar" id="gerarCurriculoButton" onclick="todosPreenchidos(event)">Gerar Currículo</button>
+  </form>
+
+  <div class="site-menu">
+    <p><a href="../pagina-inicial/pagina-inicial.html">Home</a></p>
+    <p><a href="../gerador-curriculo/gera-curriculo.html" id="exemplos">Crie seu currículo</a></p>
+    <p><a href="../templates/templates.html" id="exemplos">Explore nossos modelos</a></p>
+
+  </div>
+  <p id="direitos">Copyright © 2019 |
+    Todos os direitos reservados</p>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="gera-curriculo.js"></script>
+
+</html>

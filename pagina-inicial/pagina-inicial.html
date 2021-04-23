@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="paginaInicial.css">
+  <title>CurrículoPRO</title>
+</head>
+
+<body>
+
+
+  <!-- ------------PARTE DE CIMA (HEAD COM BACKGROUND)----------------- -->
+  <div class="main-top">
+    <h1 class="top-title" style="font-size: 8vh; font-weight: bold;">Seu currículo profissional</h1>
+    <h1 class="top-title" style="font-size: 6vh; ">Que impressiona. Para qualquer aplicação.</h1>
+  </div>
+
+  <hr class="linha">
+  <div class="botoes">
+    <a href='../gerador curriculo/gera-curriculo.html'>
+      <img id='comeceAgora' src="imagens/curriculo1 blue.png" alt="Comece a criar seu currículo"
+        style="margin-right: 80px; margin-top: 20px;">
+      <img id="create-icon" src="imagens/create.png" alt="" class="button-icon">
+    </a>
+    <a href="../templates/templates.html">
+      <img id="conhecaModelos" src="imagens/curriculo2 yellow.png" alt="Conheça nossos modelos"
+        style="margin-right: 80px; margin-top: 20px;">
+      <img id="template-icon" src="imagens/template.png" alt="" class="button-icon">
+    </a>
+
+
+
+
+  </div>
+
+  <!--   
+ <div class="botoes">
+      <button class="botao-pgInicial" type="button" name="comecar" id="botao-comecar">Comece agora</button>
+      <button class="botao-pgInicial" type="button" name="exemplos" id="botao-exemplos">Veja exemplos</button>
+  </div>  -->
+
+
+  <!-- ------------PARTE DE BAIXO (EXPLICAÇÕES)---------- -->
+  <div class="main-bottom">
+    <div class="title-image">
+      <h2>Por quê um currículo pronto?</h2>
+      <img src="why.svg" alt="Porquê?">
+    </div>
+
+    <div class="text-image">
+      <p class="text">Não tem conhecimento em Word, ou
+        não
+        quer passar horas formatando? <br>
+        Sem problemas! Geramos um currículo personalizado, com design moderno e profissional para qualquer aplicação que
+        necessitar. A única coisa que pedimos é as informações que normalmente irião em seu currículo... e 5 minutos
+        para
+        digitá-las ;)</p>
+      <img src="imagens/notWord.png" alt="">
+    </div>
+
+    <div class="title-image" style="margin-top: 15px;">
+      <h2>Ferramentas do CurrículoPRO</h2>
+      <img src="tools.svg" alt="Porquê?">
+    </div>
+
+
+    <ul>
+
+      <li><img src="imagens/modelos-icon.png" alt=""> Escolhe dentre uma variedade de modelos o que mais lhe agrada</li>
+      <hr>
+      <li><img src="imagens/align-icon.svg" alt=""> Não requer conhecimentos de formatação de texto</li>
+      <hr>
+      <li><img src="imagens/art-icon.png" alt=""> Deixe o design conosco, você só se preocupa em fornecer os dados</li>
+      <hr>
+      <li><img src="imagens/money-icon.png" alt=""> Gratuito $$</li>
+    </ul>
+
+
+  </div>
+
+  <!-- --------------------MAPA DO SITE--------------- -->
+  <div class="site-menu">
+    <p><a href="pagina-inicial.html">Home</a></p>
+    <p><a href="../gerador-curriculo/gera-curriculo.html" id="exemplos">Crie seu currículo</a></p>
+    <p><a href="../templates/templates.html" id="exemplos">Explore nossos modelos</a></p>
+
+  </div>
+  <p id="direitos">Copyright © 2019 |
+    Todos os direitos reservados</p>
+</body>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+  $("#comeceAgora, #create-icon").hover(function () {
+    $('#create-icon').css('display', 'inline-block')
+  }, function () {
+    $('#create-icon').css('display', 'none')
+  })
+
+  $("#conhecaModelos, #template-icon").hover(function () {
+    $('#template-icon').css('display', 'inline-block')
+  }, function () {
+    $('#template-icon').css('display', 'none')
+  })
+</script>
+
+</html>

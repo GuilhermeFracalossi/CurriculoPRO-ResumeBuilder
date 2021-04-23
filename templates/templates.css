@@ -1,0 +1,168 @@
+body {
+    background-color: #383838;
+  }
+
+.modelos-container {
+    text-align: center;
+    background-color: #191b1f;
+    padding: 30px 40px 20px 40px;
+}
+
+.modelo {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 20px 10px 20px;
+}
+
+.modelo-img {
+    height: 400px;
+}
+
+.head {
+    text-align: center;
+    height: 40vh;
+    background: url('modelo-bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 50px 20px 0px 20px;
+
+}
+
+.head .title {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-size: 70px;
+    font-weight: bold;
+
+
+}
+
+.head .subtitle {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.ampliar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+.ampliar img{
+    margin-left: 20px;
+    height: 70px;
+    width: 70px;
+}
+.big-image {
+    display: none;
+    position: absolute;
+    left: 35vw;
+    height: 95vh;
+    top: 2vh;
+    z-index: 99;
+}
+
+
+.modelos-subtitle{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- MAPA DO SITE----------------- */
+.site-menu {
+
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #2b2b2b; */
+    background-color: #090c15;
+
+}
+
+.site-menu p {
+    color: white;
+    width: 270px;
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.site-menu a {
+    width: 300px !important;
+    color: white;
+    text-decoration: none;
+}
+
+.site-menu p:after {
+    display: block;
+    margin-top: 3px;
+    border-bottom: 3px solid white;
+    transform: scaleX(0);
+    content: '';
+    transform-origin: 0% 50%;
+    transition-timing-function: cubic-bezier(.21, .32, .54, .96)
+}
+
+.site-menu p:hover:after {
+    transform: scaleX(1);
+
+    transition-duration: 0.5s;
+}
+
+/* .site-map p:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+  } */
+
+#map-home {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+#direitos {
+    text-align: right;
+    color: rgb(235, 235, 235);
+    /* background-color: rgb(110, 110, 110); */
+    background-color: #2b2b2b;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+
+}
+
+/*------------ FIM MAPA SITE ---------------*/

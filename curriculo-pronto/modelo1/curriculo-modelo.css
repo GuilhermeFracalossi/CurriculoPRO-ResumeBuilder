@@ -1,0 +1,238 @@
+* {
+    -webkit-print-color-adjust: exact;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body,
+html {
+    height: 1200px;
+}
+
+.container-curriculo {
+    display: flex;
+    width: 1200px;
+    height: 1690px;
+    margin: auto;
+    background-color: #fff;
+}
+
+
+
+.right-box {
+    padding: 140px 40px 20px 100px;
+    background-color: rgb(245, 245, 245);
+    width: 840px;
+}
+
+.nome {
+    color: #697283;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.grau-formacao {
+    text-transform: uppercase;
+    font-size: 20px;
+    display: inline-block;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+.idade {
+    font-size: 21px;
+
+}
+
+.grey-circle {
+    border-radius: 50%;
+    background-color: rgb(196, 196, 196);
+
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.small {
+    width: 13px;
+    height: 13px;
+}
+
+.big {
+    width: 30px;
+    height: 30px;
+}
+
+.email {
+    margin: 0px 0px 0px 15px;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 23px;
+    color: #697283;
+    padding: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 40px 0px 30px 0px;
+}
+
+p {
+    font-size: 18px;
+}
+
+hr {
+    margin: 15px 0px 5px 0px;
+}
+
+.right-box hr{
+    margin: 30px 0px 40px 0px;
+}
+.empresa,
+.curso {
+    color: #697283;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 1px;
+}
+
+.cargo {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.entrada-saida {
+    background-color: #697283;
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+
+
+}
+
+.d-flex {
+    justify-content: space-between;
+}
+
+
+
+.perfil::after {
+    content: '';
+    width: 542px;
+    height: 2px;
+    background-color: #697283;
+    margin-bottom: 7px;
+    margin-left: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.experiencia::after {
+    /*LINHA AO LADO*/
+    content: '';
+    width: 275px;
+    height: 2px;
+    background-color: #697283;
+    margin-bottom: 7px;
+    margin-left: 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+/*-------------------------- END RIGHT BOX --------------------------*/
+
+.left-box {
+    box-sizing: border-box;
+    padding: 20px 30px 0px 40px;
+    width: 440px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.left-box h2 {
+    margin-top: 25px;
+}
+
+.photo {
+    text-align: center;
+    
+    
+}
+
+.photo img {
+    height: 350px;
+    background-size: cover;
+    width: 300px;
+    object-fit: cover;
+    /* width: auto;
+    max-width: 300px;
+    height: auto;
+    max-height: 350px; */
+}
+
+.formacao p {
+    font-size: 20px;
+    margin: 2px 0px 0px 2px;
+}
+
+
+.contato , .dados-pessoais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contato h3, .dados-pessoais h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 6px 0px 6px 0px;
+
+}
+
+.contato h3 span , .dados-pessoais h3 span{
+    font-size: 18px;
+    letter-spacing: initial;
+    font-weight: 400;
+
+}
+
+
+
+/*------------------------------- FOOTER -------------------------------*/
+
+.grey-squares {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    bottom: 0px;
+    height: 30px;
+
+}
+
+.grey1 {
+    background-color: #b0b3b8;
+    height: 30px;
+    width: 100%;
+
+
+}
+
+.grey2 {
+    background-color: #8e959d;
+    height: 30px;
+    width: 100%;
+
+}
+
+.grey3 {
+    background-color: #676e78;
+    height: 30px;
+    width: 100%;
+
+}

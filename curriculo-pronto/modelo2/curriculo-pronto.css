@@ -1,0 +1,268 @@
+* {
+    -webkit-print-color-adjust: exact;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body,
+html {
+    height: 1200px;
+    background-color: #909090;
+}
+
+.container-curriculo {
+    display: flex;
+    width: 1200px;
+    height: 1690px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.left-box {
+    background-color: #414143;
+    padding: 80px 30px 20px 70px;
+    color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    height: 2px;
+    width: 80%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 35px;
+}
+
+hr:first-of-type {
+    width: 20%;
+}
+
+/* .img-border {
+    border: 3px solid white;
+    padding: 0px;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 40px 0px 60px 0px;
+    overflow: hidden;
+    text-align: center;
+
+} */
+
+.img-perfil{
+    height: 200px;
+    max-width: 200px;
+    text-align:center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-perfil img {
+
+    border: 3px solid white;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 40px 0px 60px 0px;
+
+   
+}
+
+.name,
+.sobrenome {
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 37px;
+}
+
+.name {
+    margin: 20px 0px -20px 0px;
+}
+
+.idade,
+.formacao {
+    font-size: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 10px 0px 15px 0px;
+}
+
+.objetivo .text {
+    font-size: 17px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.contato>div {
+    margin: 10px 0px 10px 0px;
+}
+
+.contato img {
+    width: 45px;
+    margin-right: 26px;
+    margin-bottom: 3px;
+}
+
+
+
+
+
+.right-box {
+    width: 800px;
+    padding: 70px 60px 10px 40px;
+
+}
+
+h1 {
+    background-color: #414143;
+    color: white;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 10px 10px 5px 20px;
+
+}
+
+.perfil .text {
+    margin: 20px 20px 60px 20px;
+    font-weight: bold;
+    text-align: justify;
+
+}
+
+.experiencia,
+.educacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cargo-ano {
+    margin: 15px 40px 0px 70px;
+    height: 140px;
+}
+
+.cargo-ano::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #414143;
+    margin-left: -50px;
+    margin-bottom: -30px;
+    margin-top: 3px;
+    position: absolute;
+    display: inline-block;
+}
+
+.cargo-ano::after {
+    content: '';
+    width: 3px;
+    height: 155px;
+    background-color: #414143;
+    margin-left: -41.6px;
+    margin-bottom: 0px;
+    margin-top: -60px;
+    display: inline-block;
+    position: absolute;
+}
+
+
+.cargo {
+    width: 200px;
+    color: #414143;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ano {
+    text-align: right;
+
+}
+
+.empresa-funcao {
+    width: 400px;
+}
+
+.empresa-funcao .empresa {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+
+.empresa-funcao .funcao {
+    text-align: justify;
+}
+
+
+
+.instituicao-ano {
+    width: 270px;
+    margin: 15px 40px 0px 70px;
+}
+
+.instituicao {
+    width: 260px;
+    color: #414143;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.instituicao-ano::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #414143;
+    margin-left: -50px;
+    margin-bottom: -30px;
+    margin-top: 3px;
+    position: absolute;
+    display: inline-block;
+}
+
+.instituicao-ano::after {
+    content: '';
+    width: 3px;
+    height: 120px;
+    background-color: #414143;
+    margin-left: -41.6px;
+    margin-bottom: 0px;
+    margin-top: -100px;
+    display: inline-block;
+    position: absolute;
+}
+
+.situacao-ano {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.curso {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top:30px;
+    text-align: center;
+    width: 340px;
+
+
+}
